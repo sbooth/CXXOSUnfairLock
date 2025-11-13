@@ -11,7 +11,7 @@
 
 namespace SFB {
 
-/// A wrapper around @c os_unfair_lock satisfying the @c Lockable C++ named requirement.
+/// A wrapper around @c os_unfair_lock satisfying the @c Lockable requirements.
 ///
 /// This class may be used with @c std::lock_guard for a scope-based lock.
 class OSUnfairLock final {
