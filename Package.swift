@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-	name: "CXXOSUnfairLock",
+	name: "CXXUnfairLock",
 	products: [
 		// Products define the executables and libraries a package produces, making them visible to other packages.
 		.library(
-			name: "CXXOSUnfairLock",
+			name: "CXXUnfairLock",
 			targets: [
-				"CXXOSUnfairLock",
+				"CXXUnfairLock",
 			]
 		),
 	],
@@ -18,15 +18,15 @@ let package = Package(
 		// Targets are the basic building blocks of a package, defining a module or a test suite.
 		// Targets can depend on other targets in this package and products from dependencies.
 		.target(
-			name: "CXXOSUnfairLock",
+			name: "CXXUnfairLock",
 			cSettings: [
-				.headerSearchPath("include/CXXOSUnfairLock"),
+				.headerSearchPath("include/CXXUnfairLock"),
 			]
 		),
 		.testTarget(
-			name: "CXXOSUnfairLockTests",
+			name: "CXXUnfairLockTests",
 			dependencies: [
-				"CXXOSUnfairLock",
+				"CXXUnfairLock",
 			],
 			swiftSettings: [
 				.interoperabilityMode(.Cxx),

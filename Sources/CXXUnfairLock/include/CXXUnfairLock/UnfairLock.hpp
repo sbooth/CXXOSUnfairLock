@@ -1,6 +1,6 @@
 //
 // Copyright © 2020-2025 Stephen F. Booth
-// Part of https://github.com/sbooth/CXXOSUnfairLock
+// Part of https://github.com/sbooth/CXXUnfairLock
 // MIT license
 //
 
@@ -9,32 +9,32 @@
 #import <os/availability.h>
 #import <os/lock.h>
 
-namespace CXXOSUnfairLock {
+namespace CXXUnfairLock {
 
 /// A wrapper around os_unfair_lock satisfying the Lockable requirements.
 ///
 /// This class may be used with std::lock_guard for a scope-based lock.
-class OSUnfairLock final {
+class UnfairLock final {
 public:
 	// MARK: Creation and Destruction
 
 	/// Creates a new unfair lock.
-	OSUnfairLock() noexcept = default;
+	UnfairLock() noexcept = default;
 
 	// This class is non-copyable
-	OSUnfairLock(const OSUnfairLock&) = delete;
+	UnfairLock(const UnfairLock&) = delete;
 
 	// This class is non-movable
-	OSUnfairLock(const OSUnfairLock&&) = delete;
+	UnfairLock(const UnfairLock&&) = delete;
 
 	// This class is non-assignable
-	OSUnfairLock& operator=(const OSUnfairLock&) = delete;
+	UnfairLock& operator=(const UnfairLock&) = delete;
 
 	// This class is non-move assignable
-	OSUnfairLock& operator=(const OSUnfairLock&&) = delete;
+	UnfairLock& operator=(const UnfairLock&&) = delete;
 
 	/// Destroys the unfair lock.
-	~OSUnfairLock() noexcept = default;
+	~UnfairLock() noexcept = default;
 
 	// MARK: Lockable
 
@@ -94,4 +94,4 @@ private:
 	os_unfair_lock lock_{OS_UNFAIR_LOCK_INIT};
 };
 
-} /* namespace CXXOSUnfairLock */
+} /* namespace CXXUnfairLock */

@@ -1,0 +1,5 @@
+module CXXUnfairLock {
+	requires cplusplus11
+	header "CXXUnfairLock/UnfairLock.hpp"
+	export *
+}

@@ -1,4 +1,4 @@
-# CXXOSUnfairLock
+# CXXUnfairLock
 
 An [`os_unfair_lock`](https://developer.apple.com/documentation/os/1646466-os_unfair_lock_lock) wrapper satisfying the [`Lockable`](https://en.cppreference.com/w/cpp/named_req/Lockable) requirements.
 
@@ -9,13 +9,13 @@ An [`os_unfair_lock`](https://developer.apple.com/documentation/os/1646466-os_un
 
 ### Swift Package Manager
 
-Add a package dependency to https://github.com/sbooth/CXXOSUnfairLock in Xcode.
+Add a package dependency to https://github.com/sbooth/CXXUnfairLock in Xcode.
 
 ### Manual or Custom Build
 
-1. Clone the [CXXOSUnfairLock](https://github.com/sbooth/CXXOSUnfairLock) repository.
+1. Clone the [CXXUnfairLock](https://github.com/sbooth/CXXUnfairLock) repository.
 2. `swift build`.
 
 ## License
 
-Released under the [MIT License](https://github.com/sbooth/CXXOSUnfairLock/blob/main/LICENSE.txt).
+Released under the [MIT License](https://github.com/sbooth/CXXUnfairLock/blob/main/LICENSE.txt).
